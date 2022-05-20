@@ -1,0 +1,104 @@
+.header{
+    background: url("../img/header_bg.png") 50% no-repeat;
+    border: 1px solid black;
+    padding-bottom: 60px;
+}
+
+.header__container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.header__link{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header__link:hover{
+    color: #00e0d0;
+}
+
+.header__content{
+    margin-top:  60px;
+}
+
+.header__title{
+    text-align: center;
+    color: #ffffff;
+}
+
+.header__text{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.header__button{
+   display: block;
+   margin: 0 auto;
+   width: 120px;
+   color: #00e0d0;
+   margin-top: 60px;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid #00e0d0;
+   padding: 10px;
+   text-align: center;
+}
+.story {
+    padding-bottom:40px ;
+}
+
+.story__container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.story__content{
+    width: 60%;
+}
+
+.story__title{
+    font-size: 24px;
+}
+
+.story__text{
+    color:#c6c5c9;
+}
+
+.story__description {
+    color:#c6c5c9;
+}
+
+.story__button{
+    display: block;
+   /* margin: 0 auto; это выравнивет блок по центру */
+   width: 120px;
+   color: #00e0d0;
+   margin-top: 60px;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid #00e0d0;
+   padding: 10px;
+   text-align: center; /* это выравнивет текст внутри блока по центру*/
+}
