@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "Fascinate";
+    src: url("../Fonts/Fascinate/Fascinate-Regular.ttf");
+  }
+  /* body { font-family: 'Fascinate', cursive;} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 .header {
     background: url("../img/header_bg.png") 50% no-repeat;
     border: 1px solid black;
     padding-bottom: 60px;
+    border-top: 1px solid black;
+    background-size: cover;
 }
 
 .header__container {
@@ -16,6 +29,12 @@
     margin-top: 40px;
     align-items: center;
 
+}
+
+.header__logo {
+    margin: 0 auto;
+    width: 128px;
+    height: 50px;
 }
 
 .header__navbar {
@@ -42,6 +61,7 @@
 .header__title {
     text-align: center;
     color: #ffffff;
+    font-family: 'Fascinate', cursive;
 }
 
 .header__text {
@@ -91,18 +111,28 @@
     color: #c6c5c9;
 }
 
-.story__button {
-    display: block;
-    /* margin: 0 auto; это выравнивет блок по центру */
-    width: 120px;
-    color: #00e0d0;
-    margin-top: 60px;
+.story__logo {
+    color: #66ece3;
     text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid #00e0d0;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+    border: solid;
     padding: 10px;
+    margin-top: 70px;
     text-align: center;
-    /* это выравнивет текст внутри блока по центру*/
+}
+
+.story__button {
+    color: #66ece3;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+    border: solid;
+    padding: 10px;
+    margin-top: 70px;
+    text-align: center;
 }
 
 .play {
@@ -165,6 +195,8 @@
 .expertise__content {
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .expertise__card {
@@ -233,6 +265,19 @@
     color: #a7a1b6;
 }
 
+.team__button {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    color: #00e0d0;
+    margin-top: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 10px;
+    text-align: center;
+}
+
 .team__link {
     text-align: center;
     border: 1px solid #00e0d0;
@@ -289,6 +334,7 @@
 
 .reviev {
     background: url("../img/header_bg.png");
+    padding-bottom: 20px;
 }
 
 .reviev__container {
@@ -376,12 +422,11 @@
 }
 
 .footer {
-    background: url(../img/PUT\ YOUR\ BACKGROUND\ HERE-2.png);
+    background: url(../img/PUT\ YOUR\ BACKGROUND\ HERE-2.png) 50% no-repeat;
 }
 
 .footer__container {
     width: 70%;
-    height: 200px;
     margin: 0 auto;
     display: flex;
     margin-top: 50px;
@@ -494,11 +539,15 @@
 }
 
 .footer__button {
-    color: #c6c5c9;
-    position: relative;
-    font-size: 14px;
-    width: 60%;
-    margin-right: 25px;
+    color: #66ece3;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+    border: solid;
+    padding: 10px;
+    margin-top: 70px;
+    text-align: center;
 
 }
 
@@ -517,6 +566,10 @@
         display: block;
     }
 
+    .team__container {
+        display: block;
+    }
+
     .brands__container {
         display: block;
     }
@@ -524,16 +577,88 @@
     .brands__content {
         display: block;
     }
-    .footer__container{
-        display: block;
+
+    .brands__feedback {
+        width: 100%;
     }
+
+    .brands__title {
+        text-align: center;
+    }
+
+    .brands__left {
+        width: 100%;
+    }
+
+    .footer {
+        background-size: cover;
+    }
+
+    .footer__container {
+        display: block;
+        /* background-size: cover; */
+    }
+
 
 }
 
 /* RESPONSIVE 768px */
 @media (max-width: 768px) {
+
+    .header {
+        display: block;
+
+    }
+
     .header__top {
         display: block;
+        margin: 0 auto;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+        width: 128px;
+        height: 50px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .header__navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .story__container {
+        width: 90%;
+    }
+
+    .story__content {
+        text-align: center;
+
+        width: 90%;
+    }
+
+    .team {
+        background-size: cover;
+    }
+
+    .reviev__content {
+        overflow-y: auto;
+    }
+
+    .team__button {
+        justify-content: center;
+    }
+
+    .expertise__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer__wraper {
+        margin-left: 25%;
     }
 
 }

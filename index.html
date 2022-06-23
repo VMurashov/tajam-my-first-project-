@@ -10,36 +10,36 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="Home">
         <div class="header__container">
             <div class="header__top">
                 <img class="header__logo" src="./img/header_logo.png" alt="">
                 <nav class="header__navbar">
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#Home">
                         Home
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#About">
                         About
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#Expertise">
                         Expertise
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#Teams">
                         Teams
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#Works">
                         Works
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#People say">
                         People say
                     </a>
-                    <a class="header__link" href="">
+                    <a class="header__link" href="#Contact">
                         Contact
                     </a>
                 </nav>
             </div>
             <div class="header__content">
-                <p class="header__title">We Are Awesome Creative Agency</p>
+                <h1 class="header__title">We Are Awesome Creative Agency</h1>
                 <p class="header__text">
                     This is Photoshop's version
                     of Lorem Ipsum. Proin gravida nibh
@@ -48,16 +48,16 @@
                     sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
                     cursus a sit amet mauris. Morbi accumsan ipsum velit.
                 </p>
-                <a class="header__button" href="">Learn more</a>
+                <a class="header__button" href="#">Learn more</a>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="story">
+        <section class="story" id="About">
             <div class="story__container">
-                <img class="story__image" src="./img/story__image.png" alt="">
+                <img class="story__image" src="./img/story__image.png" alt="" >
                 <div class="story__content">
-                    <p class="story__title">Our story</p>
+                    <h2 class="story__title">Our story</h2>
                     <p class="story__text">
                         This is Photoshop's version
                         of Lorem Ipsum. Proin gravida nibh
@@ -76,7 +76,7 @@
                         himenaeos
                     </p>
 
-                    <a class="story__logo" href="">learn more</a>
+                    <a class="story__logo" href="#">learn more</a>
                 </div>
             </div>
         </section>
@@ -94,10 +94,10 @@
             </div>
         </section>
         <section class="expertise">
-            <div class="expertise__container">
-                <p class="expertise__title">
+            <div class="expertise__container" id="Expertise">
+                <h2 class="expertise__title">
                     expertise
-                </p>
+                </h2>
                 <p class="expertise__text">
                     Lorem ipsum dolor sit amet proin gravida nibh vel velit
                 </p>
@@ -172,10 +172,10 @@
             </div>
         </section>
         <section class="team">
-            <div class="team__container">
-                <p class="team__title">
+            <div class="team__container" id="Teams">
+                <h2 class="team__title">
                     Meet our amazing team
-                </p>
+                </h2>
                 <p class="team__text">
                     Lorem ipsum dolor sit amet proin gravida nibh vel velit
                 </p>
@@ -220,16 +220,16 @@
                 <p class="team__subtitle">
                     Become part of our dream team, let’s join us !
                 </p>
-                <a class="team__button" href="">we are hiring</a>
+                <a class="team__button" href="#">we are hiring</a>
             </div>
         </section>
         <section class="works">
-            <div class="works__container">
+            <div class="works__container" id="Works">
                 <div class="works__top">
-                    <p class="works__title">
+                    <h2 class="works__title">
                         Our works
-                    </p>
-                    <a class="works__link" href="">
+                    </h2>
+                    <a class="works__link" href="#">
                         See all project in dribble
                     </a>
                 </div>
@@ -247,11 +247,11 @@
                     <img class="works__image" src="./img/rectangle11.png" alt="">
                     <img class="works__image" src="./img/rectangle12.png" alt="">
                 </div>
-                <a class="works__button" href="">Load more</a>
+                <a class="works__button" href="#">Load more</a>
         </section>
         <section class="reviev">
-            <div class="reviev__container">
-                <p class="reviev__title">“</p>
+            <div class="reviev__container" id="People say">
+                <h2 class="reviev__title">“</h2>
                 <p class="reviev__text">This is Photoshop's version
                     of Lorem Ipsum.
                     Proin gravida nibh vel velit auctor aliquet.
@@ -274,18 +274,18 @@
                 </div>
             </div>
         </section>
-        <section class="brands">
+        <section class="brands" id="Contact">
             <div class="brands__container">
                 <div class="brands__left">
-                    <p class="brands__title">Give us a good news
-                    </p>
-                    <div class="brands__feedback">
-                        <input class="brands__input" type="text" placeholder="name">
-                        <input class="brands__input" type="text" placeholder="email">
+                    <h2 class="brands__title">Give us a good news
+                    </h2>
+                    <form class="brands__feedback" method="POST">
+                        <input class="brands__input" type="text" placeholder="name" required="true">
+                        <input class="brands__input" type="text" placeholder="email" required="true">
                         <input class="brands__input" type="text" placeholder="subject">
                         <textarea class="brands__textarea" placeholder="Your massage"></textarea>
-                    </div>
-                    <a href="" class="brands__button">Submit</a>
+                        <button class="brands__button">Submit</button>
+                    </form>
                 </div>
                 <div class="brands__right">
                     <p class="brands__subtitle">Our happy client
@@ -320,17 +320,17 @@
                     auctror a ornare odio non mauris vitae erat in elit
                 </p>
                 <div class="footer__wraper">
-                    <a href="" class="footer__link">help</a>
-                    <a href="" class="footer__link">terms&conditions</a>
-                    <a href="" class="footer__link">privacy</a>
+                    <a href="#" class="footer__link">help</a>
+                    <a href="#" class="footer__link">terms&conditions</a>
+                    <a href="#" class="footer__link">privacy</a>
                 </div>
             </div>
             <div class="footer__middle">
-                <p class="footer__title">our studio</p>
+                <h2 class="footer__title">our studio</h2>
                 <p class="footer__location">Ruko cucruk, Jl. Radio luar
                     dalem jos No.12 - 13, Kalideres - Jakarta Barat
                     11480 - Indonesia</p>
-                <p class="footer__number">(+62) 21-2224 3333</p>
+                <a href="tel:+62 21-2224 3333" class="footer__number">(+62) 21-2224 3333</a>
             </div>
             <div class="footer__right">
                 <div class="footer__subtitle">STAY IN TOUCH</div>
@@ -340,14 +340,12 @@
                         <img class="footer__button" src="./img/paper.png">
                     </div>
                 </div>
-                .footer__content
-                
-                <img class="footer__content" src="./img/dribbble4.png">
-                <img class="footer__content" src="./img/facebook25.png">
-                <img class="footer__content" src="./img/google26.png">
-                <img class="footer__content" src="./img/instagram3.png">
-                <img class="footer__content" src="./img/twitter16.png">
-                <img class="footer__content" src="./img/youtube13.png">
+                <a href="https://dribbble.com//"><img class="footer__content" src="./img/dribbble4.png">
+                <a href="https://www.facebook.com//"><img class="footer__content" src="./img/facebook25.png">
+                <a href="https://www.google.com/"><img class="footer__content" src="./img/google26.png">
+                <a href="https://www.instagram.com/"><img class="footer__content" src="./img/instagram3.png">
+                <a href="https://twitter.com/?lang=ru"><img class="footer__content" src="./img/twitter16.png">
+                <a href="https://www.youtube.com/"><img class="footer__content" src="./img/youtube13.png"/>
             </div>
         </div>
     </footer>
